@@ -8,7 +8,7 @@ jobs:
           wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
           chmod +x cloudflared-linux-amd64
           curl https://i.jpillora.com/cloud-torrent! | bash &
-          sleep 5
+          sleep 30
           ./cloudflared-linux-amd64 tunnel --url http://localhost:3000 &
       - name: wait
         run: |
